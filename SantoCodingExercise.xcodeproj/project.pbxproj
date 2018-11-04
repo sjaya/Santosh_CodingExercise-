@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		A27FEA2B218EF513003943A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA2A218EF513003943A9 /* AppDelegate.swift */; };
-		A27FEA2D218EF513003943A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA2C218EF513003943A9 /* ViewController.swift */; };
 		A27FEA30218EF513003943A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27FEA2E218EF513003943A9 /* Main.storyboard */; };
 		A27FEA32218EF523003943A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27FEA31218EF523003943A9 /* Assets.xcassets */; };
 		A27FEA35218EF523003943A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27FEA33218EF523003943A9 /* LaunchScreen.storyboard */; };
+		A27FEA41218EF9FA003943A9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA40218EF9FA003943A9 /* APIConstants.swift */; };
+		A27FEA45218F1126003943A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA44218F1126003943A9 /* ViewController.swift */; };
+		A27FEA47218F1145003943A9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA46218F1145003943A9 /* ListViewController.swift */; };
+		A27FEA49218F11E8003943A9 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA48218F11E8003943A9 /* ListTableViewCell.swift */; };
+		A27FEA4C218F193A003943A9 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA4B218F193A003943A9 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A27FEA27218EF513003943A9 /* SantoCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantoCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27FEA2A218EF513003943A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A27FEA2C218EF513003943A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A27FEA2F218EF513003943A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A27FEA31218EF523003943A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27FEA34218EF523003943A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27FEA36218EF523003943A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27FEA40218EF9FA003943A9 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		A27FEA44218F1126003943A9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A27FEA46218F1145003943A9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A27FEA48218F11E8003943A9 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		A27FEA4B218F193A003943A9 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		A27FEA29218EF513003943A9 /* SantoCodingExercise */ = {
 			isa = PBXGroup;
 			children = (
+				A27FEA3F218EF9B8003943A9 /* Constants */,
+				A27FEA4A218F1905003943A9 /* Models */,
+				A27FEA3C218EF9AF003943A9 /* ViewControllers */,
 				A27FEA2A218EF513003943A9 /* AppDelegate.swift */,
-				A27FEA2C218EF513003943A9 /* ViewController.swift */,
 				A27FEA2E218EF513003943A9 /* Main.storyboard */,
 				A27FEA31218EF523003943A9 /* Assets.xcassets */,
 				A27FEA33218EF523003943A9 /* LaunchScreen.storyboard */,
 				A27FEA36218EF523003943A9 /* Info.plist */,
 			);
 			path = SantoCodingExercise;
+			sourceTree = "<group>";
+		};
+		A27FEA3C218EF9AF003943A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A27FEA43218F1126003943A9 /* HomeViewController */,
+				A27FEA42218F111F003943A9 /* ListViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A27FEA3F218EF9B8003943A9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A27FEA40218EF9FA003943A9 /* APIConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A27FEA42218F111F003943A9 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A27FEA46218F1145003943A9 /* ListViewController.swift */,
+				A27FEA48218F11E8003943A9 /* ListTableViewCell.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		A27FEA43218F1126003943A9 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A27FEA44218F1126003943A9 /* ViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		A27FEA4A218F1905003943A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A27FEA4B218F193A003943A9 /* DataModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27FEA2D218EF513003943A9 /* ViewController.swift in Sources */,
+				A27FEA45218F1126003943A9 /* ViewController.swift in Sources */,
 				A27FEA2B218EF513003943A9 /* AppDelegate.swift in Sources */,
+				A27FEA47218F1145003943A9 /* ListViewController.swift in Sources */,
+				A27FEA41218EF9FA003943A9 /* APIConstants.swift in Sources */,
+				A27FEA49218F11E8003943A9 /* ListTableViewCell.swift in Sources */,
+				A27FEA4C218F193A003943A9 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
