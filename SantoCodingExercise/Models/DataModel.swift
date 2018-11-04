@@ -9,7 +9,7 @@
 import Foundation
 
 class DataModel {
-  let title: String = ""
-  let description: String = ""
-  let imageUel: String = ""
+  var title: String = ""
+  var description: String = ""
+  var imageUrl: String = ""
 }

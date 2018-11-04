@@ -8,4 +8,4 @@
 
 import Foundation
 
-let requestApi = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
+let requestApi = "https://api.myjson.com/bins/1335im" // "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
