@@ -6,10 +6,12 @@
 //  Copyright © 2018 com.santosh.project. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class DataModel {
   var title: String = ""
   var description: String = ""
   var imageUrl: String = ""
+  var image : UIImage?
+  var isValidImage = true
 }

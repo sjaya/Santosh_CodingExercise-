@@ -7,8 +7,24 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 extension UIViewController {
+  
+  /// Show Progress loader
+  ///
+  /// - Parameter isStop: Stop progress view
+  func showProgress(isStop: Bool) {
+    DispatchQueue.main.async { [weak self] in
+      guard let weakSelf = self else {return}
+      if isStop {
+        MBProgressHUD.hide(for: weakSelf.view, animated: true)
+      } else {
+        MBProgressHUD.showAdded(to: weakSelf.view, animated: true)
+      }
+    }
+  }
+  
   
   /// Show Common alert view
   ///

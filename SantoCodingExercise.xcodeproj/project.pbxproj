@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650005A46C0D53B0B71EBBC1 /* Pods_SantoCodingExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BED9608942B905AA57026B1 /* Pods_SantoCodingExercise.framework */; };
 		A27FEA2B218EF513003943A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA2A218EF513003943A9 /* AppDelegate.swift */; };
 		A27FEA30218EF513003943A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27FEA2E218EF513003943A9 /* Main.storyboard */; };
 		A27FEA32218EF523003943A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27FEA31218EF523003943A9 /* Assets.xcassets */; };
@@ -22,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6545DC425A98C0D15802C873 /* Pods-SantoCodingExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SantoCodingExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-SantoCodingExercise/Pods-SantoCodingExercise.release.xcconfig"; sourceTree = "<group>"; };
+		6BED9608942B905AA57026B1 /* Pods_SantoCodingExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SantoCodingExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C60CDA8A043BE242EA0ED /* Pods-SantoCodingExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SantoCodingExercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SantoCodingExercise/Pods-SantoCodingExercise.debug.xcconfig"; sourceTree = "<group>"; };
+		A209DC0B2190A5D7002F36B6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		A27FEA27218EF513003943A9 /* SantoCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantoCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27FEA2A218EF513003943A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27FEA2F218EF513003943A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,17 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650005A46C0D53B0B71EBBC1 /* Pods_SantoCodingExercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DCDD9A4A777C3132C973E4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				912C60CDA8A043BE242EA0ED /* Pods-SantoCodingExercise.debug.xcconfig */,
+				6545DC425A98C0D15802C873 /* Pods-SantoCodingExercise.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A27FEA1E218EF513003943A9 = {
 			isa = PBXGroup;
 			children = (
 				A27FEA29218EF513003943A9 /* SantoCodingExercise */,
 				A27FEA28218EF513003943A9 /* Products */,
+				6DCDD9A4A777C3132C973E4D /* Pods */,
+				F07F7B25BB6A3BB8113D696D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +85,7 @@
 		A27FEA29218EF513003943A9 /* SantoCodingExercise */ = {
 			isa = PBXGroup;
 			children = (
+				A209DC0B2190A5D7002F36B6 /* Bridging-Header.h */,
 				A27FEA55218F1FED003943A9 /* Extensions */,
 				A27FEA3F218EF9B8003943A9 /* Constants */,
 				A27FEA4D218F1CAB003943A9 /* NetworkLayer */,
@@ -149,6 +167,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F07F7B25BB6A3BB8113D696D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BED9608942B905AA57026B1 /* Pods_SantoCodingExercise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27FEA39218EF523003943A9 /* Build configuration list for PBXNativeTarget "SantoCodingExercise" */;
 			buildPhases = (
+				1D43994C62BE4FD0F42FE2DB /* [CP] Check Pods Manifest.lock */,
 				A27FEA23218EF513003943A9 /* Sources */,
 				A27FEA24218EF513003943A9 /* Frameworks */,
 				A27FEA25218EF513003943A9 /* Resources */,
+				E89B3AE4F5AF3244FDEA414A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +242,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D43994C62BE4FD0F42FE2DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SantoCodingExercise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89B3AE4F5AF3244FDEA414A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SantoCodingExercise/Pods-SantoCodingExercise-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SantoCodingExercise/Pods-SantoCodingExercise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A27FEA23218EF513003943A9 /* Sources */ = {
@@ -370,6 +439,7 @@
 		};
 		A27FEA3A218EF523003943A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912C60CDA8A043BE242EA0ED /* Pods-SantoCodingExercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +458,7 @@
 		};
 		A27FEA3B218EF523003943A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6545DC425A98C0D15802C873 /* Pods-SantoCodingExercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
