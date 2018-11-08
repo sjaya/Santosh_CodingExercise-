@@ -133,7 +133,6 @@ extension ListViewController {
         //Parse the data to get the data list array
         self?.dataList = (self?.parseListData(data: data))!
         DispatchQueue.main.async {
-         self?.showProgress(isStop: true)
           self?.setViewData()
         }
       case .failed(error: let error):
@@ -142,6 +141,10 @@ extension ListViewController {
       case .failedMessage(message: let message):
         print("calldataWebService message ::\(message)")
         self?.showAlert("Error", message: message)
+      }
+      DispatchQueue.main.async {
+        self?.showProgress(isStop: true)
+        self?.refreshControl.endRefreshing()
       }
     }
   }

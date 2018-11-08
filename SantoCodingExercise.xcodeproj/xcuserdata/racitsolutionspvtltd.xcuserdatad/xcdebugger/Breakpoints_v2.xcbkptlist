@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SantoCodingExercise/ViewControllers/ListViewController/ListViewController.swift"
-            timestampString = "563349370.0613149"
+            timestampString = "563350587.991815"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "parseListData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SantoCodingExercise/ViewControllers/ListViewController/ListViewController.swift"
-            timestampString = "563349370.06181"
+            timestampString = "563350587.9924901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "parseListData(data:)"
             landmarkType = "7">
          </BreakpointContent>
