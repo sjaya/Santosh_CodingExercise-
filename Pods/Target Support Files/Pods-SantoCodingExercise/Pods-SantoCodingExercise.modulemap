@@ -1,0 +1,6 @@
+framework module Pods_SantoCodingExercise {
+  umbrella header "Pods-SantoCodingExercise-umbrella.h"
+
+  export *
+  module * { export * }
+}
