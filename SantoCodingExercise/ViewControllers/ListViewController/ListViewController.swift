@@ -27,7 +27,8 @@ class ListViewController: UIViewController {
     
     setViewElements()
     
-    //Set image request time out
+    //Register For table view cell
+    tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
     getDataFromServer()
   }
   
@@ -99,6 +100,28 @@ extension ListViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    return loadCustomCell(index: indexPath)
+  }
+  
+  func loadCustomCell(index: IndexPath) -> CustomTableViewCell {
+    let listCell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: index) as! CustomTableViewCell
+    listCell.createCell()
+    
+    let dataModel = dataList[index.row]
+    listCell.titleLabel.text = dataModel.title
+    listCell.descriptionLabel.text = dataModel.description
+    
+    if let dataImage = dataModel.image {
+      listCell.cellImageView.image = dataImage
+    }
+    else {
+      setImage(model: dataModel, imageView: listCell.cellImageView, index: index)
+    }
+    listCell.isUserInteractionEnabled = false
+    return listCell
+  }
+  
+  func loadCellFromStoryBoard(indexPath: IndexPath) -> ListTableViewCell {
     let listCell = tableView.dequeueReusableCell(withIdentifier: ListTableViewCell.identifier, for: indexPath) as! ListTableViewCell
     let dataModel = dataList[indexPath.row]
     listCell.titleLabel.text = dataModel.title
@@ -108,13 +131,13 @@ extension ListViewController: UITableViewDataSource {
       listCell.cellImageView.image = dataImage
     }
     else {
-    setImage(model: dataModel, imageView: listCell.cellImageView, index: indexPath)
+      setImage(model: dataModel, imageView: listCell.cellImageView, index: indexPath)
     }
     listCell.isUserInteractionEnabled = false
     return listCell
   }
   
- 
+  
   
 }
 
@@ -158,32 +181,33 @@ extension ListViewController {
     print("calldataWebService data ::\(String(describing: NSString(data: data, encoding: String.Encoding.ascii.rawValue))) ")
     
     
-
+    
     if let jObject = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) {
       print("yes")
       
-     if let jsonDictionary = jObject as? [String:Any?] {
-      //Get the title of the Page
-      if let title = jsonDictionary["title"] as? String {
-        self.titleString = title
-      }
-      
-      //Get the list of Rows to display
-      if let jsonArray = jsonDictionary["rows"] as? [[String:Any]] {
-        for row in jsonArray {
-          
-          if let title = row["title"] as? String {
-          let dataModel = DataModel()
-          dataModel.title = title
-          dataModel.description = row["description"] as? String ?? ""
-          dataModel.imageUrl = row["imageHref"] as? String ?? ""
-          dataList.append(dataModel) //Add the parsed object to the list
+      if let jsonDictionary = jObject as? [String:Any?] {
+        //Get the title of the Page
+        if let title = jsonDictionary["title"] as? String {
+          self.titleString = title
+        }
+        
+        //Get the list of Rows to display
+        if let jsonArray = jsonDictionary["rows"] as? [[String:Any]] {
+          for row in jsonArray {
+            
+            if let title = row["title"] as? String {
+              let dataModel = DataModel()
+              dataModel.title = title
+              dataModel.description = row["description"] as? String ?? ""
+              dataModel.imageUrl = row["imageHref"] as? String ?? ""
+              dataList.append(dataModel) //Add the parsed object to the list
+            }
           }
         }
       }
     }
-    }
     return dataList
   }
 }
+
 

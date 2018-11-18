@@ -20,6 +20,7 @@
 		A27FEA51218F1CD9003943A9 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA50218F1CD9003943A9 /* WebServiceManager.swift */; };
 		A27FEA54218F1D0D003943A9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA53218F1D0D003943A9 /* Reachability.swift */; };
 		A27FEA57218F200D003943A9 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA56218F200D003943A9 /* ViewControllerExtension.swift */; };
+		A2C3DE9821A19BCD00481DCE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3DE9721A19BCD00481DCE /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		A27FEA50218F1CD9003943A9 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		A27FEA53218F1D0D003943A9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A27FEA56218F200D003943A9 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		A2C3DE9721A19BCD00481DCE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		A27FEA42218F111F003943A9 /* ListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A2C3DE9721A19BCD00481DCE /* CustomTableViewCell.swift */,
 				A27FEA46218F1145003943A9 /* ListViewController.swift */,
 				A27FEA48218F11E8003943A9 /* ListTableViewCell.swift */,
 			);
@@ -295,6 +298,7 @@
 				A27FEA2B218EF513003943A9 /* AppDelegate.swift in Sources */,
 				A27FEA47218F1145003943A9 /* ListViewController.swift in Sources */,
 				A27FEA41218EF9FA003943A9 /* APIConstants.swift in Sources */,
+				A2C3DE9821A19BCD00481DCE /* CustomTableViewCell.swift in Sources */,
 				A27FEA49218F11E8003943A9 /* ListTableViewCell.swift in Sources */,
 				A27FEA54218F1D0D003943A9 /* Reachability.swift in Sources */,
 				A27FEA4C218F193A003943A9 /* DataModel.swift in Sources */,
