@@ -21,7 +21,18 @@
 		A27FEA54218F1D0D003943A9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA53218F1D0D003943A9 /* Reachability.swift */; };
 		A27FEA57218F200D003943A9 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FEA56218F200D003943A9 /* ViewControllerExtension.swift */; };
 		A2C3DE9821A19BCD00481DCE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3DE9721A19BCD00481DCE /* CustomTableViewCell.swift */; };
+		A2C3DEA021A1A0BB00481DCE /* SantoCodingExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3DE9F21A1A0BB00481DCE /* SantoCodingExerciseTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2C3DEA221A1A0BB00481DCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A27FEA1F218EF513003943A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A27FEA26218EF513003943A9;
+			remoteInfo = SantoCodingExercise;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6545DC425A98C0D15802C873 /* Pods-SantoCodingExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SantoCodingExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-SantoCodingExercise/Pods-SantoCodingExercise.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +54,9 @@
 		A27FEA53218F1D0D003943A9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A27FEA56218F200D003943A9 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		A2C3DE9721A19BCD00481DCE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		A2C3DE9D21A1A0BB00481DCE /* SantoCodingExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SantoCodingExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C3DE9F21A1A0BB00481DCE /* SantoCodingExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantoCodingExerciseTests.swift; sourceTree = "<group>"; };
+		A2C3DEA121A1A0BB00481DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				650005A46C0D53B0B71EBBC1 /* Pods_SantoCodingExercise.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C3DE9A21A1A0BB00481DCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A27FEA29218EF513003943A9 /* SantoCodingExercise */,
+				A2C3DE9E21A1A0BB00481DCE /* SantoCodingExerciseTests */,
 				A27FEA28218EF513003943A9 /* Products */,
 				6DCDD9A4A777C3132C973E4D /* Pods */,
 				F07F7B25BB6A3BB8113D696D /* Frameworks */,
@@ -80,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A27FEA27218EF513003943A9 /* SantoCodingExercise.app */,
+				A2C3DE9D21A1A0BB00481DCE /* SantoCodingExerciseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +193,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A2C3DE9E21A1A0BB00481DCE /* SantoCodingExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2C3DE9F21A1A0BB00481DCE /* SantoCodingExerciseTests.swift */,
+				A2C3DEA121A1A0BB00481DCE /* Info.plist */,
+			);
+			path = SantoCodingExerciseTests;
+			sourceTree = "<group>";
+		};
 		F07F7B25BB6A3BB8113D696D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +232,24 @@
 			productReference = A27FEA27218EF513003943A9 /* SantoCodingExercise.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A2C3DE9C21A1A0BB00481DCE /* SantoCodingExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2C3DEA421A1A0BB00481DCE /* Build configuration list for PBXNativeTarget "SantoCodingExerciseTests" */;
+			buildPhases = (
+				A2C3DE9921A1A0BB00481DCE /* Sources */,
+				A2C3DE9A21A1A0BB00481DCE /* Frameworks */,
+				A2C3DE9B21A1A0BB00481DCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2C3DEA321A1A0BB00481DCE /* PBXTargetDependency */,
+			);
+			name = SantoCodingExerciseTests;
+			productName = SantoCodingExerciseTests;
+			productReference = A2C3DE9D21A1A0BB00481DCE /* SantoCodingExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +262,10 @@
 				TargetAttributes = {
 					A27FEA26218EF513003943A9 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					A2C3DE9C21A1A0BB00481DCE = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A27FEA26218EF513003943A9;
 					};
 				};
 			};
@@ -229,6 +283,7 @@
 			projectRoot = "";
 			targets = (
 				A27FEA26218EF513003943A9 /* SantoCodingExercise */,
+				A2C3DE9C21A1A0BB00481DCE /* SantoCodingExerciseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +296,13 @@
 				A27FEA35218EF523003943A9 /* LaunchScreen.storyboard in Resources */,
 				A27FEA32218EF523003943A9 /* Assets.xcassets in Resources */,
 				A27FEA30218EF513003943A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C3DE9B21A1A0BB00481DCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +367,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2C3DE9921A1A0BB00481DCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C3DEA021A1A0BB00481DCE /* SantoCodingExerciseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2C3DEA321A1A0BB00481DCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A27FEA26218EF513003943A9 /* SantoCodingExercise */;
+			targetProxy = A2C3DEA221A1A0BB00481DCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A27FEA2E218EF513003943A9 /* Main.storyboard */ = {
@@ -479,6 +557,46 @@
 			};
 			name = Release;
 		};
+		A2C3DEA521A1A0BB00481DCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 527XE45ZDW;
+				INFOPLIST_FILE = SantoCodingExerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Santosh.SantoCodingExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SantoCodingExercise.app/SantoCodingExercise";
+			};
+			name = Debug;
+		};
+		A2C3DEA621A1A0BB00481DCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 527XE45ZDW;
+				INFOPLIST_FILE = SantoCodingExerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Santosh.SantoCodingExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SantoCodingExercise.app/SantoCodingExercise";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +614,15 @@
 			buildConfigurations = (
 				A27FEA3A218EF523003943A9 /* Debug */,
 				A27FEA3B218EF523003943A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2C3DEA421A1A0BB00481DCE /* Build configuration list for PBXNativeTarget "SantoCodingExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C3DEA521A1A0BB00481DCE /* Debug */,
+				A2C3DEA621A1A0BB00481DCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
